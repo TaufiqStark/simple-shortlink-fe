@@ -87,5 +87,7 @@ linkForm.addEventListener('submit', async (e) => {
     console.log(e);
     btnLoading.stop();
     alert(e.message);
+  } finally {
+    e.target.querySelector('#url').value = '';
   }
 });
