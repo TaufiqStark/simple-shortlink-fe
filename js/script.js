@@ -16,8 +16,8 @@ class Loading {
 }
 
 function copyText(text) {
-  const tempTxt=document.createElement("input");
-  tempTxt.value=text;
+  const tempTxt = document.createElement("input");
+  tempTxt.value = text;
   document.body.appendChild(tempTxt);
   tempTxt.select();
   document.execCommand("copy");
